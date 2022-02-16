@@ -3,12 +3,12 @@ class Proxmark3 < Formula
   homepage "http://www.proxmark.org/"
   head do
     if ENV.has_key?('HOMEBREW_TRAVIS_COMMIT')
-      url "https://github.com/RfidResearchGroup/proxmark3.git", :branch => "#{ENV['HOMEBREW_TRAVIS_BRANCH']}", :revision => "#{ENV['HOMEBREW_TRAVIS_COMMIT']}"
+      url "https://github.com/lucyxss/proxmark3.git", :branch => "#{ENV['HOMEBREW_TRAVIS_BRANCH']}", :revision => "#{ENV['HOMEBREW_TRAVIS_COMMIT']}"
     else
-      url "https://github.com/RfidResearchGroup/proxmark3.git"
+      url "https://github.com/lucyxss/proxmark3.git"
     end
   end
-  
+
   depends_on "readline"
   depends_on "pkg-config" => :build
   depends_on "qt5"

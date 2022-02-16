@@ -11,8 +11,9 @@ class Proxmark3 < Formula
 
   depends_on "readline"
   depends_on "pkg-config" => :build
-  depends_on "qt5"
-  depends_on "lucyxss/proxmark3/arm-none-eabi-gcc" => :build
+  depends_on "openssl@3" => :build
+  depends_on "qt5" => :recommended
+  depends_on "./arm-none-eabi-gcc" => :build
 
   option "with-blueshark", "Enable Blueshark (BT Addon) support"
 
